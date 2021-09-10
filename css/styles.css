@@ -44,6 +44,7 @@ header{
 nav{
     
     margin-top: 3px;
+    float: right;
 }
 
 nav li{
@@ -247,15 +248,210 @@ section.get .button{
     padding-top: 7px;
 }
 
-fopter{
+footer{
     width: 100%;
     height: 60px;
     padding: 5px 0;
     text-align: center;
 }
 
-footer nav li{
+footer nav li a {
     font-size: 80%;
     color: rgba(0,0,0);
     text-decoration: underline;
+}
+
+
+/*Medium resolution */
+@media (max-width: 768px) { 
+
+    #logo img {
+        width: 25%; 
+    }
+    nav li { 
+        margin-right: 15px; 
+        font-size: 90%; 
+    }
+    input.search {
+        width: 10%; 
+    }
+    
+    section.hero { 
+        background-size: 770px 410px; 
+        margin-bottom: 0; 
+        max-height: 100%; 
+        padding-bottom: 10px; 
+    }
+    
+    .heroimage { 
+        margin: 50px 0 0 20px; 
+        width: 50%; 
+    }
+    .herocontent { 
+        width: 40%; 
+        margin-left: 10px; 
+        padding-top: 10px; 
+    }
+    
+    section.hero h1 { 
+        font-size: 290%; 
+    }
+    
+    section.hero p { 
+        margin-bottom: 20px; 
+    }
+
+    .button { 
+        width: 200px; 
+        height: 35px; 
+        padding-top: 10px; 
+        font-size: 150%; 
+    }
+
+    section.features { 
+        width: 100%; 
+    }
+    section.features h2 { 
+        margin-top: 20px; 
+    }
+    section.features aside { 
+        width: 33%; 
+        height: auto; 
+        margin-left: 0; 
+    }
+    section.features aside img { 
+        width: 100%; 
+        height: auto; 
+    }
+
+    section.organize { 
+        padding: 0 0 80px 0; 
+    }
+    section.organize img, section.share img { 
+        width: 50%; 
+        height: auto; 
+        margin-left: 10px; 
+        margin-top: 60px; 
+    }
+    .organizecontent, .sharecontent { 
+        width: 40%; 
+    }
+    .organizecontent h2, .sharecontent h2 { 
+        line-height: 90%; 
+        margin-bottom: 5px; 
+        margin-left: 10px; 
+    }
+    .organizecontent p, .sharecontent p { 
+        font-size: 90%; 
+    }
+    
+    section.share { 
+        width: 100%; 
+        padding: 0 0 80px 0; 
+    }
+    section.get h2 { 
+        font-size: 180%; 
+        margin-left: 20px; 
+    }	
+    section.get .button { 
+        margin-right: 20px; 
+    }
+    .container { 
+        width: 100%; 
+    }
+    
+}
+    
+    /* THESE RULES APPLY TO THE LOW REZ DISPLAY, AND DO NOT CASCADE */
+    
+    @media (max-width: 320px) { 
+    header { 
+        height: auto; 
+    }
+    #logo { 
+        margin: 0 auto; 
+        width: 200px; 
+    }
+    #logo img { 
+        margin: 0 0 10px 0; 
+        width: 200px; 
+    }
+    nav { 
+        float: none; 
+        margin-left: -15px; 
+    }
+    input.search { 
+        display: none; 
+    }
+    section.hero { 
+        background-size: 1000px 800px; 
+        padding-bottom: 20px; 
+    }
+    .heroimage { 
+        float: none; 
+        width: 100%; 
+        margin: 20px 0 -50px 0; 
+    }
+    .herocontent {
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 0; 
+        float: none; 
+        text-align: center; 
+    }
+    .button { 
+        margin: 0 auto; 
+    }
+    section.features { 
+        width: 90%; 
+        height: auto; 
+    }
+    section.features h2 { 
+        line-height: 100%; 
+        margin-bottom: -15px; 
+    }
+    section.features aside { 
+        float: none; 
+        width: 100%; 
+    }
+    section.organize { 
+        width: 100%; 
+        height: auto; 
+    }
+    section.organize img, section.share img { 
+        width: 100%; 
+        float: none; 
+    }
+    .organizecontent, .sharecontent { 
+        float: none; 
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 0 10px; 
+        text-align: center; 
+    }
+
+    section.share { 
+        width: 90%; 
+        height: auto; 
+    }
+    
+    section.get {
+        height: auto; 
+        text-align: center; 
+        padding: 20px 0; 
+    }
+    section.get h2 { 
+        float: none; 
+        line-height: 100%; 
+        margin: 0 0 10px 0; 
+    }	
+    section.get .button {
+        float: none; 
+        margin: 0 auto; 
+    }
+    
+    .container { 
+        width: 90%; 
+    }
+    
 }
